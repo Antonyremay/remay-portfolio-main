@@ -19,6 +19,7 @@ const socialLinks = [
   { name: "Instagram", href: "https://www.instagram.com/antonyremane/", icon: Instagram },
 ]
 
+
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false)
 
