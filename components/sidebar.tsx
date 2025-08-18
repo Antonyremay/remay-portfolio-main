@@ -13,10 +13,10 @@ const navigation = [
 ]
 
 const socialLinks = [
-  { name: "GitHub", href: "#", icon: Github },
-  { name: "LinkedIn", href: "#", icon: Linkedin },
-  { name: "Twitter", href: "#", icon: Twitter },
-  { name: "Instagram", href: "#", icon: Instagram },
+  { name: "GitHub", href: "https://github.com/Antonyremay", icon: Github },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/antonyremane/", icon: Linkedin },
+  { name: "Twitter", href: "https://twitter.com/antonyremane", icon: Twitter },
+  { name: "Instagram", href: "https://www.instagram.com/antonyremane/", icon: Instagram },
 ]
 
 export default function Sidebar() {
