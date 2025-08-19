@@ -73,10 +73,14 @@ export function Hero() {
             <Mail className="mr-2 h-5 w-5" />
             Get In Touch
           </Button>
-          <Button variant="outline" size="lg" className="w-full sm:w-auto bg-transparent">
+          <a
+            href="/AntonyRemane_resume.pdf"
+            download
+            className="w-full sm:w-auto bg-transparent inline-flex items-center justify-center px-4 py-2 border border-input rounded-md font-medium text-sm transition-colors hover:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+          >
             <Download className="mr-2 h-5 w-5" />
             Download Resume
-          </Button>
+          </a>
         </div>
 
         <div className="flex justify-center space-x-8">
