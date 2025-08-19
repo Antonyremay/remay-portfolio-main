@@ -17,12 +17,7 @@ export function About() {
       icon: BarChart3,
       title: "Data Visualization",
       description: "Interactive dashboards and statistical analysis",
-    },
-    {
-      icon: Code2,
-      title: "Software Development",
-      description: "Full-stack development with modern frameworks",
-    },
+    }
   ]
 
   return (
@@ -43,7 +38,7 @@ export function About() {
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 Currently pursuing my Bachelor of Engineering in Computer Science and Engineering at Stella Mary's
-                College of Engineering, I've developed a strong foundation in Python, SQL, and data visualization tools,
+                    College of Engineering, I've developed a strong foundation in Python, SQL, and data visualization tools,
                 along with experience in statistical analysis and machine learning.
               </p>
               <p>

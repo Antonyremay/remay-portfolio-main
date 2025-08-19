@@ -57,7 +57,7 @@ export function Projects() {
       results:
         "Increased click-through rates by 40%, boosted sales conversion by 28%, and improved user engagement by 35%.",
       role: "ML Engineer & Backend Developer",
-      image: "/placeholder-icujy.png",
+      image: "\modern-ecommerce-dashboard.png",
       technologies: ["Python", "Apache Spark", "Redis", "MongoDB", "FastAPI"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com",
