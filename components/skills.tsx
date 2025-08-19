@@ -45,7 +45,6 @@ export function Skills() {
       skills: [
         { name: "Data Structures", level: 85 },
         { name: "Algorithms", level: 85 },
-        { name: "Software Development", level: 80 },
         { name: "Web Technologies", level: 85 },
         { name: "Problem Solving", level: 90 },
       ],

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Download, Instagram } from "lucide-react"
 
-const roles = ["Data Scientist", "CS Student", "Software Developer", "Problem Solver"]
+const roles = ["Data Scientist", "Computer Science Major", "Tech Enthusiast", "Deep Learning Engineer","Predictive Modeler"]
 
 export function Hero() {
   const [currentRole, setCurrentRole] = useState(0)
