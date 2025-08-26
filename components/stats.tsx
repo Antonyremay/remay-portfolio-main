@@ -6,7 +6,7 @@ import { BookOpen, Clock, Award, Users } from "lucide-react"
 
 const stats = [
   { icon: BookOpen, label: "Projects Completed", value: 3, suffix: "" },
-  { icon: Clock, label: "Hours of Training", value: 130, suffix: "+" },
+  { icon: Clock, label: "Hours of Training", value: 150, suffix: "+" },
   { icon: Award, label: "Certifications", value: 2, suffix: "" },
   { icon: Users, label: "Community Involvement", value: 1, suffix: "+" },
 ]
