@@ -49,7 +49,7 @@ export function Contact() {
     {
       icon: MapPin,
       label: "Location",
-      value: "Kanyakumari, India",
+      value: "Bangalore, India",
       href: null,
     },
   ]
@@ -60,7 +60,7 @@ export function Contact() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-heading font-bold text-foreground mb-4">Contact</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm always open to discussing new opportunities, interesting data science projects, or collaborating on
+            I'm always open to discussing new opportunities, interesting projects, or collaborating on
             machine learning research. Let's connect and explore how we can work together!
           </p>
         </div>
@@ -99,7 +99,7 @@ export function Contact() {
             <div className="mt-8 p-6 bg-card rounded-lg border border-border">
               <h4 className="font-heading font-bold text-foreground mb-2">Quick Response</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                I typically respond to emails within 24 hours. For urgent data science consultations or project
+                I typically respond to emails within 24 hours. For urgent consultations or project
                 discussions, feel free to call or connect with me on LinkedIn.
               </p>
             </div>

@@ -6,121 +6,50 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Github, ExternalLink, Target, Lightbulb, Cog, TrendingUp } from "lucide-react"
 
+const githubProfileUrl = "https://github.com/Antonyremay"
+
 export function Projects() {
   const [filter, setFilter] = useState("All")
 
   const projects = [
     {
-      title: "Customer Sentiment Analysis Platform",
+      title: "ChurnIQ - Customer Churn Prediction & Analytics Platform",
       description:
-        "Machine learning platform for analyzing customer sentiment from social media and reviews using NLP techniques.",
+        "Customer churn analytics platform using the IBM Telco Customer Churn dataset to support retention prioritization and KPI analysis.",
       problem:
-        "Companies struggled to understand customer sentiment across multiple platforms, leading to poor customer experience decisions.",
+        "Customer teams needed a consistent way to identify churn risk and prioritize retention efforts.",
       solution:
-        "Built an automated sentiment analysis system using BERT and custom NLP models to process thousands of reviews and social media posts in real-time.",
+        "Built a Logistic Regression workflow with preprocessing, stratified train/test splitting, 5-fold cross-validation, churn probability scoring, segmentation, and feature engineering.",
       results:
-        "Improved customer satisfaction prediction accuracy by 85%, reduced manual analysis time by 90%, and helped clients increase retention by 25%.",
-      role: "Data Scientist & ML Engineer",
-      image: "/sentiment-analysis-dashboard.png",
-      technologies: ["Python", "TensorFlow", "BERT", "Flask", "PostgreSQL", "Docker"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: true,
-      category: "Data Science",
-    },
-    {
-      title: "COVID-19 Data Analysis Dashboard",
-      description:
-        "Interactive dashboard for visualizing COVID-19 trends and predictions using real-time data from multiple sources.",
-      problem:
-        "Public health officials needed real-time insights into COVID-19 trends to make informed policy decisions.",
-      solution:
-        "Developed a comprehensive dashboard with predictive modeling, real-time data integration, and interactive visualizations for trend analysis.",
-      results:
-        "Used by 50+ health departments, achieved 92% prediction accuracy for case trends, and helped inform policy decisions affecting 2M+ people.",
-      role: "Data Analyst & Visualization Specialist",
-      image: "/covid-data-analysis.png",
-      technologies: ["Python", "Plotly", "Dash", "Pandas", "Scikit-learn", "APIs"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: true,
-      category: "Data Science",
-    },
-    {
-      title: "E-Commerce Recommendation Engine",
-      description:
-        "Collaborative filtering recommendation system for e-commerce platform to improve product discovery and sales.",
-      problem:
-        "E-commerce platform had low conversion rates due to poor product discovery and irrelevant recommendations.",
-      solution:
-        "Implemented hybrid recommendation system combining collaborative filtering and content-based approaches with real-time learning capabilities.",
-      results:
-        "Increased click-through rates by 40%, boosted sales conversion by 28%, and improved user engagement by 35%.",
-      role: "ML Engineer & Backend Developer",
-      image: "\modern-ecommerce-dashboard.png",
-      technologies: ["Python", "Apache Spark", "Redis", "MongoDB", "FastAPI"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-      category: "Machine Learning",
-    },
-    {
-      title: "Image Classification Neural Network",
-      description:
-        "Deep learning model for medical image classification to assist in early disease detection and diagnosis.",
-      problem:
-        "Medical professionals needed faster and more accurate tools for analyzing medical images and detecting anomalies.",
-      solution:
-        "Built a convolutional neural network using transfer learning with ResNet architecture, achieving high accuracy in medical image classification.",
-      results:
-        "Achieved 94% accuracy in disease detection, reduced diagnosis time by 60%, and assisted in 1000+ medical cases.",
-      role: "Deep Learning Engineer",
-      image: "/image-classification-network.png",
-      technologies: ["Python", "PyTorch", "OpenCV", "Flask", "Docker", "AWS"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-      category: "Deep Learning",
-    },
-    {
-      title: "Financial Market Prediction Model",
-      description:
-        "Time series forecasting model for predicting stock prices using LSTM networks and technical indicators.",
-      problem:
-        "Investors lacked reliable tools for predicting short-term market movements and making informed trading decisions.",
-      solution:
-        "Developed LSTM-based model incorporating technical indicators, sentiment analysis, and market data for price prediction.",
-      results:
-        "Achieved 78% directional accuracy, generated 15% average returns in backtesting, and processed 500+ stocks daily.",
-      role: "Quantitative Analyst & ML Engineer",
+        "Created a repeatable analytics workflow for customer retention prioritization and business KPI analysis.",
+      role: "Data Scientist & Data Analyst",
       image: "/data-visualization-dashboard.png",
-      technologies: ["Python", "TensorFlow", "Pandas", "Alpha Vantage API", "Streamlit"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
+      technologies: ["React", "TypeScript", "Logistic Regression", "SQL", "Power BI", "Data Analytics"],
+      githubUrl: "https://github.com/Antonyremay/churnsmart-insight",
+      liveUrl: "https://churnsmart-insight.vercel.app/",
+      featured: true,
       category: "Data Science",
     },
     {
-      title: "Natural Language Processing Chatbot",
+      title: "Elite Weather - Weather Data Analytics Application",
       description:
-        "Intelligent chatbot using transformer models for customer support automation with context understanding.",
+        "Responsive weather application using AI-assisted development and the OpenWeather API for real-time, city-based data.",
       problem:
-        "Customer support teams were overwhelmed with repetitive queries, leading to long response times and poor satisfaction.",
+        "Users needed a simple way to retrieve current weather data for different cities.",
       solution:
-        "Built an NLP-powered chatbot using transformer architecture with context awareness and seamless human handoff capabilities.",
+        "Integrated REST API endpoints and implemented data validation and transformation workflows for downstream analysis.",
       results:
-        "Reduced response time by 85%, handled 75% of queries automatically, and improved customer satisfaction by 40%.",
-      role: "NLP Engineer & Full-Stack Developer",
-      image: "/ai-chat-interface.png",
-      technologies: ["Python", "Transformers", "FastAPI", "React", "PostgreSQL"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-      category: "NLP",
+        "Gained hands-on experience in prompt engineering, API integration, deployment workflows, and real-time web data.",
+      role: "Data Analyst & API Integrator",
+      image: "/Elite_weather_image.png",
+      technologies: ["OpenWeather API", "REST APIs", "JSON", "Web APIs", "Deployment Tools", "Lovable AI"],
+      githubUrl: "https://github.com/Antonyremay/Elite-Weather",
+      liveUrl: "https://eliteweather.lovable.app/home",
+      featured: true,
     },
   ]
 
-  const categories = ["All", "Data Science", "Machine Learning", "Deep Learning", "NLP"]
+  const categories = ["All", "Data Science"]
   const featuredProjects = projects.filter((project) => project.featured)
   const filteredProjects = projects.filter(
     (project) => !project.featured && (filter === "All" || project.category === filter),
@@ -132,7 +61,7 @@ export function Projects() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-heading font-bold text-foreground mb-4">Portfolio</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A collection of projects that showcase my skills in data science and machine learning — from academic work
+            A collection of projects that showcase my skills in Data science and machine learning — from academic work
             to real-world applications. Each project reflects my ability to analyze problems, design effective
             solutions, and implement them using modern tools and technologies.
           </p>
@@ -201,18 +130,27 @@ export function Projects() {
 
                   {/* Action Buttons */}
                   <div className="flex gap-3">
-                    <Button variant="outline" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-2 h-4 w-4" />
-                        View Code
-                      </a>
-                    </Button>
-                    <Button asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                    {project.githubUrl && (
+                      <Button variant="outline" asChild>
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <Github className="mr-2 h-4 w-4" />
+                          View Code
+                        </a>
+                      </Button>
+                    )}
+                    {project.liveUrl ? (
+                      <Button asChild>
+                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          Live Demo
+                        </a>
+                      </Button>
+                    ) : (
+                      <Button disabled>
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
-                      </a>
-                    </Button>
+                        Demo
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -273,18 +211,27 @@ export function Projects() {
                   )}
                 </div>
                 <div className="flex gap-2">
-                  <Button size="sm" variant="outline" className="flex-1 bg-transparent" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-1 h-3 w-3" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button size="sm" className="flex-1" asChild>
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                  {project.githubUrl && (
+                    <Button size="sm" variant="outline" className="flex-1 bg-transparent" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-1 h-3 w-3" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
+                  {project.liveUrl ? (
+                    <Button size="sm" className="flex-1" asChild>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-1 h-3 w-3" />
+                        Demo
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button size="sm" className="flex-1" disabled>
                       <ExternalLink className="mr-1 h-3 w-3" />
                       Demo
-                    </a>
-                  </Button>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>

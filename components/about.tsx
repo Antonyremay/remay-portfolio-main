@@ -37,20 +37,13 @@ export function About() {
             <h3 className="text-2xl font-heading font-bold text-foreground mb-6">My Journey in Data Science</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Currently pursuing my Bachelor of Engineering in Computer Science and Engineering at Stella Mary's
-                    College of Engineering, I've developed a strong foundation in Python, SQL, and data visualization tools,
-                along with experience in statistical analysis and machine learning.
+                Computer Science graduate with a Bachelor of Engineering in Computer Science and Engineering from Stella Mary's College of Engineering. Developed a strong foundation in Python, SQL, data visualization, statistical analysis, and machine learning, with hands-on experience in data analysis, preprocessing, and predictive modeling.
               </p>
               <p>
                 Driven by a commitment to continuous learning, I actively seek opportunities to apply my academic
                 foundation to real-world problems, aiming to contribute meaningfully to data-driven decision-making. My
                 expertise includes working on academic projects involving data preprocessing, model training, and
                 evaluation.
-              </p>
-              <p>
-                As an active member of the Byte-Bash-Blitz Technical Community, I participate in organizing technical
-                workshops and hackathons, collaborate on projects that address real-world challenges, and engage in
-                community outreach programs to promote STEM education.
               </p>
             </div>
 
@@ -65,7 +58,7 @@ export function About() {
               </div>
               <div>
                 <span className="font-semibold text-foreground">Location:</span>
-                <span className="text-muted-foreground ml-2">Kanyakumari, India</span>
+                <span className="text-muted-foreground ml-2">Bangalore, India</span>
               </div>
               <div>
                 <span className="font-semibold text-foreground">Freelance:</span>

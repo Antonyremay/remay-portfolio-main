@@ -3,51 +3,43 @@ import { GraduationCap, Briefcase, Award } from "lucide-react"
 
 const education = [
   {
-    degree: "Bachelor of Engineering in Computer Science",
-    school: "University of California, Berkeley",
+    degree: "B.E. Computer Science & Engineering",
+    school: "Stella Mary's College of Engineering",
+    schoolUrl: "https://www.stellamaryscoe.edu.in",
     period: "2022 - 2026",
     description:
-      "Specializing in Data Science and Machine Learning. Relevant coursework: Algorithms, Data Structures, Statistics, Machine Learning, Deep Learning, Database Systems.",
-    gpa: "3.8/4.0",
-  },
-  {
-    degree: "High School Diploma",
-    school: "Lincoln High School",
-    period: "2018 - 2022",
-    description:
-      "Graduated Summa Cum Laude. President of Computer Science Club. Winner of Regional Science Fair for AI project.",
-    gpa: "4.0/4.0",
+      "Kalluketti Junction, Azhikkal Rd, Nagercoil, Kanyakumari. Focused on computer science, data analysis, machine learning, databases, and software development.",
+    gpa: "7.6/10",
   },
 ]
 
 const experience = [
   {
-    title: "Data Science Intern",
-    company: "TechCorp Analytics",
-    period: "Summer 2024",
+    title: "Relationship Manager",
+    company: "Square Yards Pvt. Ltd., Bangalore",
+    companyUrl: "https://www.squareyards.com",
+    period: "May 2026 - Sept 2026",
     description: [
-      "Developed predictive models using Python and scikit-learn, improving customer retention by 15%",
-      "Created interactive dashboards with Tableau, reducing report generation time by 40%",
-      "Collaborated with cross-functional teams to implement data-driven solutions for business problems",
+      "Analyzed customer and lead information to identify high-potential prospects and support data-driven customer engagement strategies.",
+      "Monitored lead progression, customer interactions, and follow-ups to identify business trends and opportunities.",
+      "Used customer and business information to support prioritization, reporting, and data-informed decision-making.",
     ],
   },
   {
-    title: "Research Assistant",
-    company: "UC Berkeley AI Lab",
-    period: "2023 - Present",
+    title: "Business Development Associate Intern",
+    company: "Orvionar Tech Pvt. Ltd.",
+    companyUrl: "https://www.orvionar.in",
+    period: "Feb 2026 - May 2026",
     description: [
-      "Conducting research on natural language processing and sentiment analysis",
-      "Published 2 papers in peer-reviewed conferences on machine learning applications",
-      "Mentoring undergraduate students in data science projects and methodologies",
+      "Supported business development activities and contributed to customer and market research.",
     ],
   },
 ]
 
 const certifications = [
-  "AWS Certified Cloud Practitioner",
-  "Google Data Analytics Professional Certificate",
-  "TensorFlow Developer Certificate",
-  "Microsoft Azure AI Fundamentals",
+  "Python, Machine Learning & Deep Learning - Codenex Global Pvt. Ltd. (Jan 2026)",
+  "Career Essentials in Software Development - Microsoft & LinkedIn (Jan 2026)",
+  "Penetration Testing Professional Certificate - Cybrary and LinkedIn (Nov 2024)",
 ]
 
 export default function Resume() {
@@ -78,7 +70,14 @@ export default function Resume() {
                   <CardHeader>
                     <CardTitle className="text-lg text-foreground">{edu.degree}</CardTitle>
                     <div className="flex justify-between items-center text-sm">
-                      <span className="text-accent font-medium">{edu.school}</span>
+                      <a
+                        href={edu.schoolUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-accent font-medium hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                      >
+                        {edu.school}
+                      </a>
                       <span className="text-muted-foreground">{edu.period}</span>
                     </div>
                   </CardHeader>
@@ -129,7 +128,14 @@ export default function Resume() {
                   <CardHeader>
                     <CardTitle className="text-lg text-foreground">{exp.title}</CardTitle>
                     <div className="flex justify-between items-center text-sm">
-                      <span className="text-accent font-medium">{exp.company}</span>
+                      <a
+                        href={exp.companyUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-accent font-medium hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                      >
+                        {exp.company}
+                      </a>
                       <span className="text-muted-foreground">{exp.period}</span>
                     </div>
                   </CardHeader>

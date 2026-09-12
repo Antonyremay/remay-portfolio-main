@@ -16,7 +16,7 @@ const socialLinks = [
   { name: "GitHub", href: "https://github.com/Antonyremay", icon: Github },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/antonyremane/", icon: Linkedin },
   { name: "Twitter", href: "https://twitter.com/antonyremane", icon: Twitter },
-  { name: "Instagram", href: "https://www.instagram.com/antonyremane/", icon: Instagram },
+  { name: "Instagram", href: "https://www.instagram.com/_remay__/", icon: Instagram },
 ]
 
 
@@ -54,7 +54,7 @@ export default function Sidebar() {
               <img src="/antonyremay.jpg" alt="Antony Remane" className="w-full h-full object-cover" />
             </div>
             <h1 className="text-2xl font-bold mb-2">Antony Remane</h1>
-            <p className="text-sidebar-foreground/80">Data Science Student</p>
+            <p className="text-sidebar-foreground/80">Data Professional</p>
           </div>
 
           {/* Navigation */}
