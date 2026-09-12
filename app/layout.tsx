@@ -18,7 +18,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Antony Remane - Computer Science Portfolio",
   description:
-    "Pre-final year Computer Science Engineering student from Stella Mary's College - showcasing projects, skills, and experience in software development",
+    "Computer Science graduate from Stella Mary's College - showcasing projects, technical skills, and hands-on experience in data science, data analytics, and software development",
   generator: "v0.app",
 }
 
