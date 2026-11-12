@@ -62,6 +62,24 @@ export function Projects() {
         "https://app.powerbi.com/groups/me/reports/8b937f24-11c6-448a-b1af-04ddaf027277/d1a562e65c0bf2b37de8?experience=power-bi",
       category: "Data Engineering",
     },
+    {
+      title: "Olist ETL – End-to-End E-commerce Data Pipeline",
+      description:
+        "Built an end-to-end ETL pipeline using Python, Pandas, and MySQL to clean, validate, transform, and load 9 Brazilian e-commerce datasets for SQL-based sales analysis.",
+      problem:
+        "Raw e-commerce datasets contain inconsistencies, duplicate records, and data quality issues that need to be addressed before reliable business analysis can be performed.",
+      solution:
+        "Developed an end-to-end ETL workflow using Python and Pandas to clean, transform, and validate nine datasets, then load the processed data into MySQL. Used SQL queries for sales and business analysis and Docker and Docker Compose to containerize the ETL environment.",
+      results:
+        "Cleaned and validated 1,000,163 geolocation records, reducing the dataset to 738,332 records (a 26.2% reduction). Developed an interactive Power BI dashboard to analyze sales, orders, products, and delivery performance.",
+      role: "Data Engineer & Data Analyst",
+      image: "/Olist%20ETL_%20Brazil%20Data%20Pipeline%20Dashboard.png",
+      technologies: ["Python", "Pandas", "SQL", "MySQL", "Power BI", "Docker", "Docker Compose"],
+      githubUrl: "https://github.com/Antonyremay/olist-etl-project",
+      liveUrl:
+        "https://app.powerbi.com/groups/me/reports/c096857c-3910-4e23-901a-2f6556dbb002/d982d4f260193c407630?experience=power-bi",
+      category: "Data Engineering",
+    },
   ]
 
   const categories = ["All", "Data Science", "Data Engineering"]
