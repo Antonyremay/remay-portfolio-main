@@ -21,7 +21,7 @@ export function Projects() {
       results:
         "Created a repeatable analytics workflow for customer retention prioritization and business KPI analysis.",
       role: "Data Scientist & Data Analyst",
-      image: "/ChurnIQ%20Neon%20Retention%20Dashboardd.png",
+      image: "/ChurnIQ%20Neon%20Analytics%20Dashboard.png",
       technologies: ["React", "TypeScript", "Logistic Regression", "SQL", "Power BI", "Data Analytics"],
       githubUrl: "https://github.com/Antonyremay/churnsmart-insight",
       liveUrl: "https://churnsmart-insight.vercel.app/",
